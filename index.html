@@ -289,15 +289,15 @@
   }
   .about-feature-text { font-size: 13px; line-height: 1.7; color: var(--muted); }
   .about-feature-text strong { color: var(--text); font-weight: 500; }
-  .about-images { display: flex; flex-direction: column; gap: 1.5rem; }
+  .about-images { display: flex; flex-direction: column; gap: 1.5rem; max-width: 460px; }
   .about-img-main {
-    width: 100%; aspect-ratio: 4/3; object-fit: cover;
+    width: 100%; height: 260px; object-fit: cover;
     border: 1px solid rgba(201,168,76,0.2);
     filter: sepia(15%) brightness(0.95);
   }
-  .about-img-row { display: flex; gap: 1.5rem; }
+  .about-img-row { display: flex; gap: 1rem; }
   .about-img-sm {
-    flex: 1; aspect-ratio: 1; object-fit: cover;
+    flex: 1; height: 160px; object-fit: cover;
     border: 1px solid rgba(201,168,76,0.2);
     filter: sepia(15%) brightness(0.95);
   }
