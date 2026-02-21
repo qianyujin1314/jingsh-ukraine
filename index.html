@@ -674,10 +674,10 @@
     </div>
   </div>
   <div class="about-images">
-    <img class="about-img-main" src="/mnt/user-data/uploads/律所图片3.jpg" alt="律所大楼外观" onerror="this.style.background='linear-gradient(135deg,#2C1A0A,#6B0F0F)';this.style.minHeight='280px'">
+    <img class="about-img-main" src="律所图片3.jpg" alt="律所大楼外观" onerror="this.style.background='linear-gradient(135deg,#2C1A0A,#6B0F0F)';this.style.minHeight='280px'">
     <div class="about-img-row">
-      <img class="about-img-sm" src="/mnt/user-data/uploads/律所图片.jpg" alt="律所入口" onerror="this.style.background='linear-gradient(135deg,#3D2B0F,#8B1A1A)';this.style.minHeight='140px'">
-      <img class="about-img-sm" src="/mnt/user-data/uploads/律所图片5.jpg" alt="律所内部" onerror="this.style.background='linear-gradient(135deg,#1A1208,#6B0F0F)';this.style.minHeight='140px'">
+      <img class="about-img-sm" src="律所图片.jpg" alt="律所入口" onerror="this.style.background='linear-gradient(135deg,#3D2B0F,#8B1A1A)';this.style.minHeight='140px'">
+      <img class="about-img-sm" src="律所图片5.jpg" alt="律所内部" onerror="this.style.background='linear-gradient(135deg,#1A1208,#6B0F0F)';this.style.minHeight='140px'">
     </div>
   </div>
 </div>
@@ -749,7 +749,7 @@
   <h2 class="section-title">专业团队，<br>值得信赖</h2>
   <p class="section-title-zh" style="margin-bottom:3rem">Meet Our Leadership · 认识我们的负责人</p>
   <div class="team-card">
-    <img class="team-photo" src="/mnt/user-data/uploads/律所图片4.jpg" alt="Viktor Dibrova" onerror="this.style.background='linear-gradient(135deg,#2C1A0A,#6B0F0F)'">
+    <img class="team-photo" src="律所图片4.jpg" alt="Viktor Dibrova" onerror="this.style.background='linear-gradient(135deg,#2C1A0A,#6B0F0F)'">
     <div class="team-info">
       <span class="team-title-badge">主任 · Director</span>
       <h3 class="team-name-zh">维克多·迪布罗娃</h3>
@@ -765,7 +765,7 @@
         </div>
         <div class="team-contact">
           <div class="team-contact-icon">✉</div>
-          <span>jingsh.kyiv@ukr.net</span>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c3a9aaada4b0abeda8baaab583b6a8b1edada6b7">[email&#160;protected]</a></span>
         </div>
         <div class="team-contact">
           <div class="team-contact-icon">📍</div>
@@ -809,7 +809,7 @@
           <div class="location-icon">✉</div>
           <div class="location-item-content">
             <div class="location-item-label">电子邮件 · Email</div>
-            <div class="location-item-value">jingsh.kyiv@ukr.net</div>
+            <div class="location-item-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ae0e3e4edf9e2a4e1f3e3fccaffe1f8a4e4effe">[email&#160;protected]</a></div>
           </div>
         </div>
         <div class="location-item">
@@ -823,7 +823,7 @@
       </div>
     </div>
     <div class="location-building">
-      <img class="location-img" src="/mnt/user-data/uploads/律所图片3.jpg" alt="律所大楼" onerror="this.style.background='linear-gradient(135deg,#1A1208,#3D2B0F)';this.style.minHeight='400px'">
+      <img class="location-img" src="律所图片3.jpg" alt="律所大楼" onerror="this.style.background='linear-gradient(135deg,#1A1208,#3D2B0F)';this.style.minHeight='400px'">
       <div class="location-img-badge">
         <span class="location-badge-zh">基辅 · 乌克兰</span>
         <span class="location-badge-en">Kyiv · Ukraine</span>
@@ -868,7 +868,7 @@
       </div>
       <div class="contact-info-item">
         <div class="contact-info-label">电子邮件 · Email</div>
-        <div class="contact-info-value">jingsh.kyiv@ukr.net</div>
+        <div class="contact-info-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="157f7c7b72667d3b7e6c7c6355607e673b7b7061">[email&#160;protected]</a></div>
         <div class="contact-info-sub">24小时内回复 · Reply within 24h</div>
       </div>
       <div class="contact-info-item">
@@ -889,7 +889,7 @@
   <div class="footer-copy">© 2024 京师（乌克兰）律师事务所 · All Rights Reserved</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Smooth scroll offset for fixed nav
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
@@ -914,19 +914,4 @@
   // Intersection observer for fade-in
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.practice-item, .team-card, .about-feature, .location-item, .contact-info-item').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-  });
-</script>
-</body>
-</html>
+      if (e.is
